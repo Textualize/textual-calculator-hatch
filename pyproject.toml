@@ -11,7 +11,7 @@ requires-python = ">=3.8"
 license = "MIT"
 keywords = []
 authors = [
-  { name = "Dave Pearson", email = "davep@textualize.io" },
+  { name = "Will McGugan", email = "willmcgugan@gmail.com" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -24,17 +24,15 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = [
-  "textual"
-]
-
-[project.urls]
-Documentation = "https://github.com/Textualize/textual-calculator-hatch#readme"
-Issues = "https://github.com/Textualize/textual-calculator-hatch/issues"
-Source = "https://github.com/Textualize/textual-calculator-hatch"
+dependencies = ["textual==0.47.1"]
 
 [project.scripts]
-calculator = "textual_calculator.calculator:run"
+calculator = "textual_calculator.entry_points:calculator"
+
+[project.urls]
+Documentation = "https://github.com/unknown/textual-calculator#readme"
+Issues = "https://github.com/unknown/textual-calculator/issues"
+Source = "https://github.com/unknown/textual-calculator"
 
 [tool.hatch.version]
 path = "src/textual_calculator/__about__.py"
